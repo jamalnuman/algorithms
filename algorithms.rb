@@ -50,3 +50,20 @@
 
 #SIDE NOTE: keep_if {|item| block} → ary, keep_if, is a method.
 #SIDE NOTE: inject(:*) for factorials or (:+) for sum etc. 
+
+#3
+
+# def add_commas(number)
+
+#   number = number.to_s
+
+#   index = 4 
+  
+#   while index <= number.length
+#     number.insert(-index, ",")
+#     index += 4
+#   end
+#   return number
+# end
+
+# p add_commas(1000)
