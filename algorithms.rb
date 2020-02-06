@@ -182,3 +182,18 @@
 # clean_yard(yard)
 
 #5)*******************************************************************************************************
+
+#Given an array of numbers, return an array of arrays that contain all of the potential 3 digit combinations that have a sum of 0.
+
+# arr_one = [0, -1, 2, -3, 1]
+
+# class Array
+#   def triplet_sum_zero
+#     combination(3).to_a.keep_if do |c|
+#       c.inject(&:+) == 0
+#     end
+#   end
+# end
+# p arr_one.triplet_sum_zero
+
+#6) *******************************************************************************************************
