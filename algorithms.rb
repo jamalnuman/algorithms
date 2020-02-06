@@ -51,7 +51,7 @@
 #SIDE NOTE: keep_if {|item| block} → ary, keep_if, is a method.
 #SIDE NOTE: inject(:*) for factorials or (:+) for sum etc. 
 
-#3
+#3)**********************************************************************************
 
 # def add_commas(number)
 
@@ -67,3 +67,118 @@
 # end
 
 # p add_commas(1000)
+
+# chron job or active jobs in ruby..increment of time do a job...
+#   twilio
+#   map my run.. broadcast your loaction periodically...so you can find out where a person is periodically
+
+#4)******************************************************************************************
+
+# def colorize(text, color_code)
+#   "\e[#{color_code}m#{text}\e[0m"
+# end
+
+# def pink(text)
+#   colorize(text, 35)
+# end
+
+# def lines(number=1)
+#   number.times { puts "" }
+# end
+
+# def receipt(col, row, basket)
+#  lines
+#  puts " Yard Report ".center(40, "=")
+#  lines(2)
+#  puts "Yard: Clean"
+#  puts "Divots: Replaced"
+#  lines(2)
+#  puts "Total Eggs Found: #{basket}"
+#  lines(2)
+#  puts "Eggs found at the following coordinates"
+#  puts "-" * 40
+#  index = 0
+#   while index < col.length
+#     col_value = "#{col[index]}".rjust(2, " ")
+#     row_value = "#{row[index]}".rjust(2, " ")
+#     col_combo = "col:#{col_value}".ljust(7, " ")
+#     row_combo = "row:#{col_value}".rjust(7, " ")
+#     print_line = "#{col_combo}" + "-" + "#{row_combo}"
+#     puts print_line.center(40)
+#     index += 1
+#   end
+#  lines(2)
+#  puts "Sir or Madam,"
+#  puts "Your yard is safe,"
+#  puts "continue the revelry,"
+#  puts "Until we meet again, Peter C. Tail"
+#  lines
+#  puts "=" * 40
+# end
+
+# def print_grid(grid)
+#   system "clear" # clears screen
+
+#   grid.each do |row|
+#     puts row.join(" ") # prints each row formatted with a space between elements
+#   end
+# end
+
+# def paint_eggs(yard)
+#   y_index = 0
+#   while y_index < yard.length
+#     x_index = 0
+#     while x_index < yard[y_index].length
+#       if yard[y_index][x_index] == "E"
+#         yard[y_index][x_index] = pink("E")
+#       end
+#       x_index += 1
+#     end
+#     y_index += 1
+#   end 
+#   return yard 
+# end
+
+# def clean_yard(yard)
+#   # write code here 
+#   y_index = 0
+#   basket = 0
+#   col = []
+#   row = []
+#   paint_eggs(yard)
+#   while y_index < yard.length
+#     x_index = 0
+#     while x_index < yard[y_index].length
+#       if yard[y_index][x_index] == pink("E")
+#         col << y_index
+#         row << x_index
+#         basket += 1
+#         yard[y_index][x_index] = "G"
+#         print_grid(yard)
+#         sleep(0.5)
+#       end
+#       x_index += 1
+#     end
+#     y_index += 1
+#   end  
+#   receipt(col, row, basket)
+# end
+
+# yard = [
+#         ["G", "G", "G", "G", "G", "G", "G", "G", "E", "G", "G", "E", "G", "E"], #0
+#         ["G", "G", "E", "G", "G", "G", "G", "G", "G", "E", "G", "G", "G", "G"], #1
+#         ["G", "G", "G", "G", "G", "E", "G", "E", "G", "G", "G", "G", "G", "G"], #2
+#         ["G", "G", "G", "E", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"], #3
+#         ["G", "E", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"], #4
+#         ["G", "G", "G", "G", "G", "G", "G", "E", "G", "G", "G", "G", "E", "G"], #5
+#         ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "E", "G"], #6
+#         ["G", "G", "G", "G", "E", "G", "G", "G", "G", "G", "G", "G", "G", "G"], #7
+#         ["G", "G", "E", "G", "G", "G", "G", "G", "G", "E", "G", "G", "G", "G"], #8
+#         ["G", "G", "G", "G", "E", "G", "G", "G", "G", "G", "G", "G", "G", "E"], #9
+#         ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "E", "G", "G"] #10
+#         ]
+
+
+# clean_yard(yard)
+
+#5)*******************************************************************************************************
