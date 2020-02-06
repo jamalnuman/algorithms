@@ -197,3 +197,24 @@
 # p arr_one.triplet_sum_zero
 
 #6) *******************************************************************************************************
+
+# An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+
+# def no_dupes(string)
+#   seen_before = {}
+#   index = 0
+
+#   while index < string.length 
+#     if seen_before[string[index]]
+#       return false 
+#     end
+
+#     seen_before[string[index]] = true 
+#     index += 1
+#   end 
+
+#   return true 
+# end
+
+# p no_dupes("hello")
