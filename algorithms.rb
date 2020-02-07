@@ -218,3 +218,44 @@
 # end
 
 # p no_dupes("hello")
+
+#7************************************************************************************************************
+
+#code for nested loop with while keyword
+
+# password = "gorilla"
+# x = 0
+# while x < password.length
+#   y = x + 1
+#     while y < password.length
+#       p "This is the x index: #{password[x]}" 
+#       p "this is the y index: #{password[y]}"
+#       y += 1
+#     end
+#   puts "=" * 30
+#   x += 1
+# end
+
+#8*************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
