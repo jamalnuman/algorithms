@@ -238,6 +238,34 @@
 
 #8*************************************************************
 
+#  1. Convert an array of arrays into a hash.
+#     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+
+array = [[1, 3], [8, 9], [2, 16]]
+
+outer_index = 0
+inner_index = 0
+
+hash = {}
+while outer_index < array.length
+  outer_index = 0
+  hash[array[outer_index]] = array[outer_index + 1]
+end
+
+
+
+
+
+# function everyOther(array){
+#     final_array = []
+#   for(var i = 0; i < array.length; i += 2){
+#     final_array.push(array[i])
+#   }
+#     return final_array
+# }
+
+# console.log(everyOther(["a", "b", "c", "d", "e", "f"]))
+
 
 
 
